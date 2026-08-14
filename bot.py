@@ -2,7 +2,7 @@ import os
 import telebot
 import requests
 
-BOT_TOKEN = os.getenv("BOT_TOKEN")
+BOT_TOKEN = os.getenv("8651849879:AAFJ5PahVQ_NIPNIM5KD5nMfS_1hrmeI5ZI")
 if not BOT_TOKEN:
     print("❌ BOT_TOKEN set karo!")
     exit(1)
