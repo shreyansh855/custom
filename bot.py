@@ -2,11 +2,13 @@ import os
 import telebot
 import requests
 
-BOT_TOKEN = os.getenv("8651849879:AAFJ5PahVQ_NIPNIM5KD5nMfS_1hrmeI5ZI")
+# === TOKEN CHECK ===
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 if not BOT_TOKEN:
     print("❌ BOT_TOKEN set karo!")
     exit(1)
 
+print("🤖 Bot Started!")
 bot = telebot.TeleBot(BOT_TOKEN)
 
 @bot.message_handler(commands=['start'])
@@ -35,5 +37,4 @@ def send(message):
     except Exception as e:
         bot.reply_to(message, f"❌ Error: {str(e)[:50]}")
 
-print("🤖 Bot Started!")
 bot.polling()
