@@ -4,7 +4,7 @@ import requests
 import re
 import time
 
-BOT_TOKEN = os.getenv("8651849879:AAFcqcIqUWz34RUsee2_EP_TVnoFQkKHgMo")
+BOT_TOKEN = os.getenv("8651849879:AAFJ5PahVQ_NIPNIM5KD5nMfS_1hrmeI5ZI")
 ADMIN_ID = int(os.getenv("ADMIN_ID", 7423951207))
 
 bot = telebot.TeleBot(BOT_TOKEN)
